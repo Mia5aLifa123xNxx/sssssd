@@ -9,15 +9,11 @@ const pretty = require('pretty-ms')
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
-
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!');
   }
 });
-
-
-
 client.on("ready", async  => {
   setInterval(function(){
   client.channels.find('id', '487035713196523540').setName("ر");
@@ -29,8 +25,6 @@ client.on("ready", async  => {
   client.channels.find('id', '487035713196523540').setName("روم ּ؏ــٰا̍م");
     }, 10000);
   });
-
-
 client.on("ready", async  => {
   setInterval(function(){
   client.channels.find('id', '487034516050018315').setName("B");
@@ -48,13 +42,6 @@ client.on("ready", async  => {
   client.channels.find('id', '487034516050018315').setName("Bot Develobers");
     }, 10000);
   });
-
-
-
-
-
-
-
  client.on('ready', function(){	
     var ms = 10000 ;	
     var setGame = ['%help','%inv'];	
@@ -72,17 +59,6 @@ j = 1;
 }, ms);	
 	
 });
-
-
-
-
-
-
-
-
-
-
-
 const discord = require('discord.js');
 
 const Util = require('discord.js');
@@ -104,8 +80,6 @@ const fs = require('fs');
 const Client = new Discord.Client({disableEveryone: true});
 
 const prefix = "%";
-/////////////////////////
-////////////////////////
 
 client.on('message', async msg =>{
 	if (msg.author.bot) return undefined;
@@ -366,9 +340,6 @@ function play(guild, song) {
 
 	serverQueue.textChannel.send(`**${song.title}**, is now playing!`);
 }
-
-
-
  client.on('message' , message => {
 
     if (message.content === "%inv") {
@@ -386,9 +357,6 @@ https://bit.ly/2yzHkPS
   message.author.sendEmbed(embed);
    }
 });
-
-
-
         client.on('message', message => {
           var prefix = '%';
           if (message.content.startsWith(prefix + 'موسيقى')) {
@@ -405,14 +373,6 @@ https://bit.ly/2yzHkPS
       message.channel.send(embed)
       }
   });
-
-
-
-
-
-
-
-
 client.on('message', message => {
 	 var prefix = "%"
   if (message.author.x5bz) return;
@@ -453,19 +413,6 @@ client.on('message', message => {
   })
 }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', message => {
            const embed = new Discord.RichEmbed()
      if (message.content === "%المعلومات") {
@@ -484,50 +431,8 @@ message.author.send("CJ Bot" + `  **
     |:heart: #شكرا لإطلاعك على هذه المعلومة#:heart: 
 **`);
     }
-}); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  client.on('message' , message => {
+});
+client.on('message' , message => {
 
     if (message.content === "%support") {
 	    message.reply(`تم ارساله الرابط في الخاص`)
@@ -543,22 +448,7 @@ message.author.send("CJ Bot" + `  **
   message.author.sendEmbed(embed);
    }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        client.on('message', message => {
+client.on('message', message => {
           var prefix = '%';
           if (message.content.startsWith(prefix + 'العاب')) {
       let embed = new Discord.RichEmbed()
@@ -575,21 +465,7 @@ message.author.send("CJ Bot" + `  **
       message.channel.send(embed)
       }
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  client.on('message', async message => {
+client.on('message', async message => {
         var prefix = "%";
   if(message.content.startsWith(prefix + "ns")) {
     let i = client.users.size;
@@ -604,14 +480,7 @@ message.author.send("CJ Bot" + `  **
     });
   }
 });
-
-
-
-
-
-
-
-  client.on('message', async message => {
+client.on('message', async message => {
         var prefix = "%";
   if(message.content.startsWith(prefix + "sn")) {
     let i = client.users.size;
@@ -626,27 +495,7 @@ message.author.send("CJ Bot" + `  **
     });
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  client.on('message', msg => {
+client.on('message', msg => {
     var prefix = "%"
   if(msg.content.startsWith (prefix  + 'server')) {
   let embed = new Discord.RichEmbed()
@@ -665,23 +514,6 @@ message.author.send("CJ Bot" + `  **
   msg.channel.send(embed);
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', message => {
   if (message.content.startsWith("%صوره")) {
       var mentionned = message.mentions.users.first();
@@ -698,18 +530,6 @@ client.on('message', message => {
     message.channel.sendEmbed(embed);
   }
 });
-
-
-
-
-
-
-
-  
-
-
-
-  
 client.on("message", (message) => {
 if (message.content.startsWith("%ch")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply(" `MANAGE_CHANNELS` لا يوجد لديك صلاحية ");
@@ -719,36 +539,6 @@ message.channel.sendMessage('تـم إنـشاء روم كـتابـي')
 
 }
 });
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', message => {   
     if (message.author.boss) return;
     var prefix = "%";
@@ -832,11 +622,6 @@ client.on("message", message => {
     message.channel.send(image)
         }
     });
-
-
-
-
-
 client.on('message', message => {
     if (message.content.startsWith("%bans")) {
         message.guild.fetchBans()
@@ -858,26 +643,6 @@ client.on('message', message => {
 message.channel.sendEmbed(embed);
  }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message' , async (message) => {
 	var prefix = "%";
        if(message.content.startsWith(prefix + "clear")) {
@@ -891,14 +656,7 @@ client.on('message' , async (message) => {
     }))) 
 }
 });
-
-
-
-
-
-
-
-        client.on('message', message => {
+client.on('message', message => {
           var prefix = '%';
           if (message.content.startsWith(prefix + 'العامه')) {
       let embed = new Discord.RichEmbed()
@@ -923,10 +681,6 @@ client.on('message' , async (message) => {
       message.channel.send(embed)
       }
   });
-
-
-
-
 client.on('message', message => {
   var prefix = "%"
         if(message.content.startsWith(prefix + 'hypixel')) {
@@ -936,10 +690,6 @@ client.on('message', message => {
             message.channel.send(link);
         }
     });
-
-
-
-
 client.on('message', message => {
   var prefix ="%"
         if(message.content.startsWith(prefix + 'namemc')) {
@@ -962,15 +712,7 @@ client.on('message', message => {
             message.channel.send(link);
         }
     });
-
-
-
-
-
-
-
-
- client.on("message", async message => {
+client.on("message", async message => {
             if(!message.channel.guild) return;
             var prefix = "%";
         if(message.content.startsWith(prefix + 'دعوات')) {
@@ -1029,20 +771,6 @@ return;
 }
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', msg => {
     if(msg.author.bot) return;
     
@@ -1067,14 +795,6 @@ client.on('message', msg => {
     }
     
 });
-
-
-
-
-
-
-  
-
 client.on('message' , async (message) => {
   var prefix = "%";
  if (message.content.startsWith(prefix + 'prm')) {
@@ -1095,19 +815,6 @@ client.on('message' , async (message) => {
 
 }
 });
-
-
-
-
-
-
-
-
-  
-  
-
-    
-
 client.on("message", (message) => {
     if (message.content.startsWith('%del')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("`MANAGE_CHANNELS` لا يوجد لديك صلاحية ");
@@ -1118,21 +825,6 @@ client.on("message", (message) => {
         channel.delete()
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', message => {
      if (message.author.bot) return;
     if (message.content.startsWith("%رابط")) {
@@ -1158,7 +850,6 @@ client.on('message', message => {
       message.author.sendEmbed(Embed11)
     }
 });
-
 client.on('message' , async (message) => {
        if(message.content.startsWith(`<@${client.user.id}>`)) {
               message.channel.startTyping()
@@ -1180,8 +871,6 @@ client.on('message' , async (message) => {
        }
   
 });
-
-
 client.on('message',message =>{
     var prefix = "%";
     if(message.content.startsWith(prefix + 'topinv')) {
@@ -1209,8 +898,7 @@ client.on('message',message =>{
    
     }
   });
-
-        client.on('message', message => {
+client.on('message', message => {
           var prefix = '%';
           if (message.content.startsWith(prefix + 'help')) {
       let embed = new Discord.RichEmbed()
@@ -1224,9 +912,7 @@ client.on('message',message =>{
       message.channel.send(embed)
       }
   });
-
-
-        client.on('message', message => {
+client.on('message', message => {
           var prefix = '%';
           if (message.content.startsWith(prefix + 'الاداره')) {
       let embed = new Discord.RichEmbed()
@@ -1258,39 +944,6 @@ client.on('message',message =>{
       message.channel.send(embed)
       }
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
@@ -1318,11 +971,6 @@ Server ID: ${guild.id}
 Count: ${guild.memberCount}**`);
 client.channels.get("485967463670874113").sendEmbed(embed)
 });
-
-
-
-
-
 client.on('message', message => {
               if (!message.channel.guild) return;
       if(message.content =='%count')
@@ -1334,13 +982,6 @@ client.on('message', message => {
       .addField('عدد اعضاء السيرفر',`${message.guild.memberCount}`)
       message.channel.send(IzRo);
     });
-
-
-
-
-
-
-
 client.on('message', message => {
     if (message.content === "%cre") {
     if(message.author.id !== '292042690470739968') return message.channel.send('❎ » هذا الأمر مخصص لصاحب البوت فقط');
@@ -1365,30 +1006,9 @@ message.channel.sendMessage('**الرجاء الانتظار ريث ما يتم 
 }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var al7arthyCodes = ["https://f.top4top.net/p_682it2tg6.png","https://e.top4top.net/p_682a1cus5.png","https://d.top4top.net/p_682pycol4.png","https://c.top4top.net/p_682vqehy3.png","https://b.top4top.net/p_682mlf9d2.png","https://a.top4top.net/p_6827dule1.png","https://b.top4top.net/p_682g1meb10.png","https://a.top4top.net/p_682jgp4v9.png","https://f.top4top.net/p_682d4joq8.png","https://e.top4top.net/p_6828o0e47.png","https://d.top4top.net/p_6824x7sy6.png","https://c.top4top.net/p_682gzo2l5.png","https://b.top4top.net/p_68295qg04.png","https://a.top4top.net/p_682zrz6h3.png","https://f.top4top.net/p_6828vkzc2.png","https://e.top4top.net/p_682i8tb11.png"]
 var al7arthyCodes2 = ["📙__60%__  **|**  📘__40%__","📙__63%__  **|**  📘__37%__","📙__89%__  **|**  📘__11%__","📙__97%__  **|**  📘__3%__"]
+
 client.on('message', message => {
     if(!message.guild) return;
     if (message.author.bot) return;
@@ -1479,9 +1099,7 @@ var fkk =[
 	
 	
    ];
-
-
-   client.on("message", async message => {
+client.on("message", async message => {
 	   var prefix = "%";
     if(message.content == prefix+"فكك"){
         if(UserBlocked.has(message.guild.id)) return message.channel.send("هناك جلسة .")
@@ -1519,25 +1137,6 @@ var fkk =[
      });
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', message => {
     if(!message.channel.guild) return;
 if (message.content.startsWith('%ping')) {
@@ -1553,23 +1152,6 @@ let embed = new Discord.RichEmbed()
 message.channel.send({embed:embed});
 }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', message => {
     var prefix = "%"
   if (message.author.x5bz) return;
@@ -1607,24 +1189,9 @@ client.on('message', message => {
 }
 });
 
+const kingmas = [
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  const kingmas = [
-    '*** منشن الجميع وقل انا اكرهكم. ***',
+	'*** منشن الجميع وقل انا اكرهكم. ***',
  '*** اتصل على امك و قول لها انك تحبها :heart:. ***',
     '***     تصل على الوالده  و تقول لها  احب وحده.***',
     '*** تتصل على شرطي تقول له عندكم مطافي.***',
@@ -1648,7 +1215,7 @@ client.on('message', message => {
     '*** اذهب الى واحد ماتعرفه وقل له انا كيوت وابي بوسه.***',
     '*** تتصل على الوالده  و تقول لها خطفت شخص. ***',
     '*** روح اكل ملح + ليمون اذا مافيه اكل اي شيء من اختيار الي معك.  ***'
- ]
+]
   client.on('message', message => {
     var prefix = '%';
   if (message.content.startsWith(prefix + 'حكم')) {
@@ -1661,20 +1228,9 @@ client.on('message', message => {
    }
  });
 
-
-
-
-
-
-
-
-
-
-
-
-
- const Za7f = [
-  "**صورة وجهك او رجلك او خشمك او يدك**.",
+const Za7f = [
+  
+"**صورة وجهك او رجلك او خشمك او يدك**.",
   "**اصدر اي صوت يطلبه منك الاعبين**.",
   "**سكر خشمك و قول كلمة من اختيار الاعبين الي معك**.",
   "**روح الى اي قروب عندك في الواتس اب و اكتب اي شيء يطلبه منك الاعبين  الحد الاقصى 3 رسائل**.",
@@ -1725,9 +1281,7 @@ client.on('message', message => {
     "**خلاص سامحتك**.",
     "** تصيح في الشارع انا  مجنوون**.",
     "** تروح عند شخص تقول له احبك**.",
-
 ]
-
 
 client.on('message', message => {
  if (message.content.startsWith("%عقاب")) {
@@ -1742,18 +1296,9 @@ console.log('[38ab] Send By: ' + message.author.username)
   }
 });
 
-
-
-
-
-
-
-
-
-
-
-    const secreT = [
-      "**الحياة بكل ما فيها تقف دائمًا على حد الوسطية بين اتزان المعنى وضده من حب وكره وحق وباطل وعدل وظلم**.",
+const secreT = [
+      
+	"**الحياة بكل ما فيها تقف دائمًا على حد الوسطية بين اتزان المعنى وضده من حب وكره وحق وباطل وعدل وظلم**.",
       "**كى تعيش عليك ان تتقن فن التجاهل باحتراف**.",
       "**لا تحزن على من اشعرك بان طيبتك غباء امام وقاحته**.",
       "**هناك من يحلم بالنجاح وهناك من يستيقظ باكرا لتحقيقه**.",
@@ -1765,7 +1310,6 @@ console.log('[38ab] Send By: ' + message.author.username)
       "**نحن نكتب ما لا نستطيع ان نقول وما نريد ان يكون**.", 
       "**نحن نكتب ما لا نستطيع ان نقول وما نريد ان يكون**.", 
     ]
-    
     
      client.on('message', message => {
        if (message.content.startsWith("%خواطر")) {
@@ -1781,9 +1325,9 @@ console.log('[38ab] Send By: ' + message.author.username)
         }
     });
 
+console.log('mariam ra7t tmot al nas');
 
- console.log('mariam ra7t tmot al nas');
- client.on('ready', () => {
+client.on('ready', () => {
    console.log(`im redey`);
  });
  const zead = [
@@ -1845,10 +1389,7 @@ console.log('[38ab] Send By: ' + message.author.username)
     message.react("??")
    }
  });
-
-
-
-  client.on('message', message => {
+client.on('message', message => {
     if (message.content == "%اسئلني") {
          message.react('🤔','👌')
         var x = ['اين يلعب مصطفي فتحي؟', 'ما هو اسم ملعب بارشالونة', 'ما هو يوم الحج الأكبر؟', 'ما هو أطول أنهار أوربا ؟', 'ما هو اسم بيت الدجاج', 'ما هو أول بنك قام بالنشاط المصرفي في السعودية عام 1926م' , 'ما هو أول جامع أقيم في مصر','ما هو أطول نهر في آسيا','ما هو أقرب كوكب إلى الشمس','ما هو الحيوان الذي يُسمى البهنس','ما هو اول مسجد أسس بالمدينة','متى وقع صلح الحديبية عام 6هـ او 3هـ او 2هـ؟','متى قامت أمريكا بأول رحلة فضائية','متى كانت غزوة خيبر؟','ما هي السورة التي تبدأ بقوله تعالى " يا أيها النبي اتق الله ولا تطع الكافرين والمنافقين إن الله كان عليما حكيما ".اجب؟','ما هي السورة التي يطلق عليها عروس القرآن','ماذا يسمى من لايقرأ ولايكتب','ماهي أول دولة استخدمت طابع البريد','ماهو شعار الولايات المتحدة الامريكية','ماهو اذكي الحيوانات','من هو مكتشف أمريكا','مامعنى "فرعون" اجب؟','ماهو اقرب كوكب إلى الارض','ما هي نسبه المياه من الكره الارضيه?','كم عدد السجدات في القرآن الكريم؟','من هو بطل كاس العالم في عام 1966','أين أفتتح اول متحف في العالم?','ماأسم أنثى الحمار?','كم تبلغ درجه حراره الشمس؟','من هي مدينة الضباب','أين توجد أطول سكة حديد في العالم?'
@@ -1875,35 +1416,6 @@ console.log('[38ab] Send By: ' + message.author.username)
         })
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 var moment = require ("moment")
 var dat = JSON.parse("{}");
@@ -2017,12 +1529,7 @@ const w = ['./m.png'];
 
 const canvas = require("canvas-prebuilt")
 
-
-
-
-
-
-client.on('message', message => {
+lient.on('message', message => {
 	    var prefix = "%b";
               if(!message.channel.guild) return;
     if(message.content.startsWith(prefix + 'c1')) {
@@ -2065,17 +1572,6 @@ client.on('message', message => {
     })
     }
     });
-
-
-
-
-
-
-
-
-
-
-
 client.on('message',async message => {
   if(message.author.bot || message.channel.type === '%bc') return;
   let args = message.content.split(' ');
@@ -2102,27 +1598,6 @@ client.on('message',async message => {
     });
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', message => {
      if(!message.channel.guild) return;
 var prefix = "%";
@@ -2144,13 +1619,6 @@ message.channel.send(embed)
 
 
 });
-
-
-
-
-
-
-
 client.on('message', message => {
 var prefix = "%";
       if(message.content === prefix + "اخفاء") {
@@ -2162,8 +1630,6 @@ var prefix = "%";
               message.channel.send('تم اخفاء الشات :white_check_mark:  ')
  }
 });
-
-
 client.on('message', message => {
 var prefix = "%";
       if(message.content === prefix + "اظهار") {
@@ -2175,12 +1641,6 @@ var prefix = "%";
               message.channel.send('تم اظهار الشات :white_check_mark:')
  }
 });
-
-
-
-
-
-
 client.on('message', message => {
 var prefix = "%";
        if(message.content === prefix + "قفل") {
@@ -2208,13 +1668,6 @@ var prefix = "%";
     }
        
 });
-
-
-
-
-
-
-
 client.on('message',function(message) {
 	let prefix = "%";
 let args = message.content.split(" ").slice(1).join(" ");
@@ -2224,11 +1677,6 @@ if(!args) return;
 message.channel.send(`** ${args}**`); // محطوط # عشان محد يستخدم البوت لتبنيد / طرد احد من السيرفر
 }
 });
-
-
-
-
-
 client.on('message',function(message) {
 	let prefix = "%";
 let args = message.content.split(" ").slice(1).join(" ");
@@ -2239,11 +1687,8 @@ message.channel.send(`** ${args}**`); // محطوط # عشان محد يستخد
 }
 });
 
+const math = require('math-expression-evaluator');  
 
-
-
-
- const math = require('math-expression-evaluator');  
 client.on('message', message => {
 	var prefix = "%";
 if (message.content.startsWith(prefix + 'cal')) {
@@ -2320,14 +1765,7 @@ var ment = message.mentions.users.first();
 }
 });
 
-
-
-
-
-
-
-
- client.on('message', message => {
+client.on('message', message => {
 if(message.content.startsWith("%slots")) {
   let slot1 = ['🍏', '🍇', '🍒', '🍍', '🍅', '🍆', '🍑', '🍓'];
   let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
@@ -2341,13 +1779,7 @@ if(message.content.startsWith("%slots")) {
   }
   message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`)
 }
-})
-
-
-
-
-
-
+});
 client.on('message',function(message) {
     let w = ['Rock','Paper','Scissors'];
            var prefix = "%";
@@ -2388,22 +1820,6 @@ __امامك  10 توان للاختيار__`)
     });
    } 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', message => {
           var prefix = "%";
          if (message.content === prefix + "time") {
@@ -2464,15 +1880,6 @@ client.on('message', message => {
                  message.channel.sendEmbed(Date15);
         }
     });
-
-
-
-
-
-
-
-
-
 client.on('message' , message => {
   var prefix = "%";
   if(message.author.bot) return;
@@ -2510,13 +1917,6 @@ suggestchannel.send("@everyone  `||` @here ");
     return;
 }
 });
-
-
-
-
-
-
-
 client.on('message', message => {
            const embed = new Discord.RichEmbed()
      if (message.content === "%beta") {
@@ -2529,14 +1929,6 @@ message.author.send("**تجارب الاوامر**" + `  **
 **`);
     }
 }); 
-
-
-
-
-
-
-
-
 client.on('message', message => {
            const embed = new Discord.RichEmbed()
      if (message.content === "%sr7") {
@@ -2550,14 +1942,13 @@ message.author.send("**شرح**" + `  **
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 اذا ما فهمتو الشرح رح نسوي شرح كامل بصور في سيرفر البوت
 رابط السيرفر:
-https://discord.gg/BfrrJBQ
+https://discord.gg/c3D7q6c
 **`);
     }
 }); 
 
-
-
 const shorten = require('isgd');
+
 client.on('message', message => {
         var prefix = "%";
 
@@ -2573,14 +1964,7 @@ client.on('message', message => {
     shorten.custom(args[0], args[1], function(res) { 
       if (res.startsWith('Error:')) return message.channel.send(`اختصار الرابط:**${res}**`); 
       message.channel.send(`اختصار الرابط:**<${res}>**`); 
- })}}});
-
-
-
-
-
-
-
+ });
 client.on('message',async message => {
 if(message.author.bot) return;
 if(message.channel.type === 'dm') return;
@@ -2600,33 +1984,6 @@ if(args[0] === `${prefix}rename`) {
   });
 }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', message => {
 	var command = message.content.toLowerCase().split(" ")[0];
     if(command == prefix + 'suggest') {
@@ -2684,10 +2041,6 @@ No.on("collect", r => {
    })
 	}
 });
-
-
-
-
 client.on('message' , message => {
   var prefix = "%";
   if(message.author.bot) return;
@@ -2717,15 +2070,11 @@ client.on('message' , message => {
     return;
 }
 });
-
-
-
-
 client.on('message' , message => {
-  var prefix = "$";
+  var prefix = "%";
   if(message.author.bot) return;
   if(message.content.startsWith(prefix + "adminsend")) {
-    if(message.author.id !== '292042690470739968') return message.channel.send('❎ » هذا الأمر مخصص لصاحب البوت فقط');
+    if(message.author.id !== '468193494180036618') return message.channel.send('❎ » هذا الأمر مخصص لصاحب البوت فقط');
     let args = message.content.split(" ").slice(1);
 
 
@@ -2750,12 +2099,6 @@ client.on('message' , message => {
     return;
 }
 });
-
-
-
-
-
-
 client.on("message", message => {
 	var prefix = "%";
 	var args = message.content.split(' ').slice(1); 
@@ -2803,20 +2146,4 @@ client.on("message", message => {
 		} 
 	} 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-  
-  
 client.login(process.env.BOT_TOKEN);
